@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//登录路由
+Route::get('/login', 'Admin\LoginController@getLogin')->name('login');
+Route::post('/getlogin', 'Admin\LoginController@getLogin');
